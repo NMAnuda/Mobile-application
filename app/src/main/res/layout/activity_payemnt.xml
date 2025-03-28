@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2E3B4E"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="Car Icon"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AUTO SERVICE"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="370dp"
+        android:layout_height="82dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="478dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/card_background"
+        android:backgroundTint="@color/material_dynamic_neutral100"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Payment Form -->
+        <LinearLayout
+            android:layout_width="342dp"
+            android:layout_height="458dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Card Number Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/card_number_label"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="@string/paypal_content_description" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="@string/mastercard_content_description" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/visa_content_description" />
+            </LinearLayout>
+
+            <!-- Expiry Date and CVV Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <!-- Expiry Date -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/expiry_date_label"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext_background"
+                        android:hint="@string/expiry_date_hint"
+                        android:inputType="date"
+                        android:padding="12dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#A0A0A0"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <!-- CVV -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/cvv_label"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext_background"
+                        android:hint="@string/cvv_hint"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#A0A0A0"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Name on Card Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/name_on_card_label"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:hint="@string/name_on_card_hint"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#A0A0A0"
+                android:textSize="18sp" />
+
+            <!-- Amount Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/amount_label"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:text="500.00"
+                android:textColor="#000000"
+                android:textColorHint="#A0A0A0"
+                android:textSize="18sp" />
+
+            <!-- Pay Now Button -->
+            <Button
+                android:id="@+id/payment"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#FF0000"
+                android:elevation="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/pay_now_button"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="173dp">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="376dp"
+            android:layout_height="75dp"
+            android:background="@drawable/nav_button_background"
+            android:elevation="8dp"
+            app:backgroundTint="@color/material_dynamic_neutral100"
+            app:itemIconSize="24dp"
+            app:itemIconTint="@color/nav_item_tint_selector"
+            app:itemRippleColor="@color/nav_ripple"
+            app:itemTextAppearanceActive="@style/NavTextActive"
+            app:itemTextAppearanceInactive="@style/NavTextInactive"
+            app:itemTextColor="@color/nav_item_tint_selector"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.836"
+            app:menu="@menu/nav" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

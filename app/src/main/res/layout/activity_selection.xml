@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2E3B4E"
+    android:padding="16dp">
+
+    <!-- Fixed width should be match_parent or wrap_content unless specifically needed -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="Car Icon"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AUTO SERVICE"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Empty ConstraintLayout - might need content or removal -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp">
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Fixed width and corrected backgroundTint syntax -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="478dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/card_background"
+        android:backgroundTint="@color/material_dynamic_neutral100"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ScrollView
+            android:id="@+id/verticalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="8dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Card 1 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="251dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/card_background"
+                    android:backgroundTint="@color/material_dynamic_primary0"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/card_layout1">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="-1dp"
+                        android:layout_marginEnd="15dp"
+                        android:contentDescription="Oil Change Image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/first" />
+
+                    <TextView
+                        android:id="@+id/textView_card1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="74dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="113dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="Basic Maintenance Package"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2_card1_offer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="183dp"
+                        android:layout_marginBottom="87dp"
+                        android:alpha="0.9"
+                        android:background="#00CC00"
+                    android:clipToPadding="false"
+                    android:drawableStart="@android:drawable/ic_dialog_info"
+                    android:drawablePadding="4dp"
+                    android:elevation="2dp"
+                    android:padding="6dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="Offers available Toyota oil"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:translationZ="2dp" />
+
+                    <View
+                        android:id="@+id/view3_card1"
+                        android:layout_width="4dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginEnd="179dp"
+                        android:background="@drawable/circle_slot_booked"
+                        android:backgroundTint="@color/red" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2_card1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="22dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Like"
+                        android:textColor="@color/material_dynamic_neutral100" />
+
+                    <TextView
+                        android:id="@+id/textView4_card1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="87dp"
+                        android:layout_marginBottom="23dp"
+                        android:text="123"
+                        android:textColor="@color/material_dynamic_neutral100" />
+                </RelativeLayout>
+
+                <!-- Card 2 (similar fixes applied) -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="251dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/card_background"
+                    android:backgroundTint="@color/material_dynamic_primary0">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="27dp"
+                        android:layout_marginTop="-1dp"
+                        android:layout_marginEnd="29dp"
+                        android:contentDescription="Premium Service Image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/oip1" />
+
+                    <TextView
+                        android:id="@+id/textView_card2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="74dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="113dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="Premium Service Package"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2_card2_offer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="183dp"
+                        android:layout_marginBottom="87dp"
+                        android:alpha="0.9"
+                        android:background="#00CC00"
+                        android:clipToPadding="false"
+                        android:drawableStart="@android:drawable/ic_dialog_info"
+                        android:drawablePadding="4dp"
+                        android:elevation="2dp"
+                        android:padding="6dp"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:text="Special Offer Available"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:translationZ="2dp" />
+
+                    <View
+                        android:id="@+id/view3_card2"
+                        android:layout_width="4dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginEnd="179dp"
+                        android:background="@drawable/circle_slot_booked"
+                        android:backgroundTint="@color/red" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2_card2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="22dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Like"
+                        android:textColor="@color/material_dynamic_neutral100" />
+
+                    <TextView
+                        android:id="@+id/textView4_card2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="87dp"
+                        android:layout_marginBottom="23dp"
+                        android:text="456"
+                        android:textColor="@color/material_dynamic_neutral100" />
+                </RelativeLayout>
+
+                <!-- Card 3 (similar fixes applied) -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="251dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/card_background"
+                    android:backgroundTint="@color/material_dynamic_primary0">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="27dp"
+                        android:layout_marginTop="-1dp"
+                        android:layout_marginEnd="29dp"
+                        android:contentDescription="Full Service Image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/oipa" />
+
+                    <TextView
+                        android:id="@+id/textView_card3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="74dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="113dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="Full Service Package"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2_card3_offer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="183dp"
+                        android:layout_marginBottom="87dp"
+                        android:alpha="0.9"
+                        android:background="#00CC00"
+                        android:clipToPadding="false"
+                        android:drawableStart="@android:drawable/ic_dialog_info"
+                        android:drawablePadding="4dp"
+                        android:elevation="2dp"
+                        android:padding="6dp"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:text="Limited Time Deal"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:translationZ="2dp" />
+
+                    <View
+                        android:id="@+id/view3_card3"
+                        android:layout_width="4dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginEnd="179dp"
+                        android:background="@drawable/circle_slot_booked"
+                        android:backgroundTint="@color/red" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2_card3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="22dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Like"
+                        android:textColor="@color/material_dynamic_neutral100" />
+
+                    <TextView
+                        android:id="@+id/textView4_card3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="87dp"
+                        android:layout_marginBottom="23dp"
+                        android:text="789"
+                        android:textColor="@color/material_dynamic_neutral100" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- Fixed width and improved constraints -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:background="@drawable/nav_button_background"
+            android:elevation="8dp"
+            app:backgroundTint="@color/material_dynamic_neutral100"
+            app:itemIconSize="24dp"
+            app:itemIconTint="@color/nav_item_tint_selector"
+            app:itemRippleColor="@color/nav_ripple"
+            app:itemTextAppearanceActive="@style/NavTextActive"
+            app:itemTextAppearanceInactive="@style/NavTextInactive"
+            app:itemTextColor="@color/nav_item_tint_selector"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/nav" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

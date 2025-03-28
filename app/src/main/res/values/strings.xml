@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">labexam2</string>
+
+    <!-- Existing strings from the payment form -->
+    <string name="card_number_label">Card Number</string>
+    <string name="expiry_date_label">Expiry Date</string>
+    <string name="cvv_label">CVV</string>
+    <string name="name_on_card_label">Name on Card</string>
+    <string name="amount_label">Amount</string>
+    <string name="card_number_hint">1234 5678 9012 3456</string>
+    <string name="expiry_date_hint">MM/YY</string>
+    <string name="cvv_hint">123</string>
+    <string name="name_on_card_hint">John Doe</string>
+    <string name="pay_now_button">Pay Now</string>
+    <string name="paypal_content_description">PayPal</string>
+    <string name="mastercard_content_description">MasterCard</string>
+    <string name="visa_content_description">Visa</string>
+
+    <!-- New strings for the rest of the layout -->
+    <string name="app_title">AUTO SERVICE</string>
+    <string name="login_label">Log In</string>
+    <string name="slot_a_label">SLOT A</string>
+    <string name="booked_label">booked</string>
+    <string name="available_label">available</string>
+
+    <string name="car_icon_content_description">Car Icon</string>
+    <string name="home_icon_content_description">Home</string>
+    <string name="bookings_icon_content_description">Bookings</string>
+    <string name="profile_icon_content_description">Profile</string>
+
+    <string name="home_label">Home</string>
+    <string name="home_desc">Navigate to home screen</string>
+    <string name="bookings_label">Bookings</string>
+    <string name="bookings_desc">View your bookings</string>
+    <string name="profile_label">Profile</string>
+    <string name="profile_desc">Manage your profile</string>
+    <string name="more_label">More</string>
+    <string name="more_desc">Additional options</string>
+    <string name="settings_label">Settings</string>
+    <string name="logout_label">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
+
+

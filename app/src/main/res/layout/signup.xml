@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2E3B4E"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="Car Icon"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AUTO SERVICE"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="369dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"/>
+
+    <!-- Enhanced Sign-Up Form with Additional Fields -->
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="496dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/card_background"
+        android:backgroundTint="@color/material_dynamic_neutral100"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Create Account"
+            android:textColor="@android:color/black"
+            android:textSize="28sp" />
+
+        <!-- Input Fields -->
+        <EditText
+            android:id="@+id/signup_username"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:hint="Username"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+
+            android:textColor="@android:color/black"
+            android:textColorHint="#B0BEC5"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#B0BEC5"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:hint="Create Password"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#B0BEC5"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/signup_reenter_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:hint="Re-enter Password"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#B0BEC5"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/signup_contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#B0BEC5"
+            android:textSize="16sp" />
+
+        <!-- Sign-Up Button -->
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="#4CAF50"
+            android:elevation="2dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Optional: Add a "Already have an account?" link -->
+        <TextView
+            android:id="@+id/login_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Already have an account? Log In"
+            android:textColor="#4CAF50"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="231dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="376dp"
+            android:layout_height="75dp"
+            android:background="@drawable/nav_button_background"
+            android:elevation="8dp"
+            app:backgroundTint="@color/material_dynamic_neutral100"
+            app:itemIconSize="24dp"
+            app:itemIconTint="@color/nav_item_tint_selector"
+            app:itemRippleColor="@color/nav_ripple"
+            app:itemTextAppearanceActive="@style/NavTextActive"
+            app:itemTextAppearanceInactive="@style/NavTextInactive"
+            app:itemTextColor="@color/nav_item_tint_selector"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/nav" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

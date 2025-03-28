@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2E3B4E"
+    android:padding="16dp">
+
+    <!-- Fixed width should be match_parent or wrap_content unless specifically needed -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="Car Icon"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AUTO SERVICE"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp">
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Fixed width and corrected backgroundTint syntax -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="478dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/card_background"
+        android:backgroundTint="@color/material_dynamic_neutral100"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Welcome Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="Welcome"
+            android:textColor="@android:color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle -->
+
+        <!-- Button Container for Login and Sign Up -->
+
+        <!-- Sign Up with Google/Facebook Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="We hope you have a great time using the app"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="333dp"
+            android:layout_height="80dp">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="358dp"
+            android:layout_height="104dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Login Button -->
+            <Button
+                android:layout_width="123dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:text="Login"
+                android:textColor="@android:color/white" />
+
+            <!-- Sign Up Button -->
+            <Button
+                android:layout_width="123dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:text="Sign Up"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp">
+
+            <!-- "Or Sign Up With" Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Or Sign Up With"
+                android:textColor="@android:color/system_accent1_700"
+                android:textSize="14sp" />
+
+            <!-- Google Icon (Placeholder) -->
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/google" />
+
+            <!-- Facebook Icon (Placeholder) -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/facebok"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Fixed width and improved constraints -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:background="@drawable/nav_button_background"
+            android:elevation="8dp"
+            app:backgroundTint="@color/material_dynamic_neutral100"
+            app:itemIconSize="24dp"
+            app:itemIconTint="@color/nav_item_tint_selector"
+            app:itemRippleColor="@color/nav_ripple"
+            app:itemTextAppearanceActive="@style/NavTextActive"
+            app:itemTextAppearanceInactive="@style/NavTextInactive"
+            app:itemTextColor="@color/nav_item_tint_selector"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/nav" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
