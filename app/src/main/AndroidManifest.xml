@@ -36,5 +36,17 @@
         <activity
             android:name=".Packages"
             android:exported="false" />
+        <activity
+            android:name=".loginsignup"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".sign"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" />
     </application>
 </manifest>

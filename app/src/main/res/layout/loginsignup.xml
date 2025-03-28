@@ -31,12 +31,6 @@
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Log In"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
     </LinearLayout>
 
 
@@ -98,6 +92,7 @@
 
             <!-- Login Button -->
             <Button
+                android:id="@+id/login"
                 android:layout_width="123dp"
                 android:layout_height="65dp"
                 android:layout_marginEnd="8dp"
@@ -109,6 +104,7 @@
 
             <!-- Sign Up Button -->
             <Button
+                android:id="@+id/signup"
                 android:layout_width="123dp"
                 android:layout_height="65dp"
                 android:layout_marginStart="8dp"

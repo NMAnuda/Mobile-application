@@ -7,24 +7,21 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 
-class loginsignup : AppCompatActivity() {
+class login : AppCompatActivity() {
 
     @SuppressLint("MissingInflatedId", "WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.loginsignup)
+        setContentView(R.layout.logtin)
 
-        val mybutton: Button = findViewById(R.id.login)
-          val signup: Button= findViewById(R.id.signup)
+        val mybutton: Button = findViewById(R.id.login_button)
+        //   val login: login= findViewById<TextView>(R.id.login)
 
-        signup.setOnClickListener {
-            val intent = Intent(this, sign::class.java)
-            startActivity(intent)
-        }
+
         mybutton.setOnClickListener {
-           val intent = Intent(this, login::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
-        }
+       }
 
 
     }
