@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#2E3B4E"
+    android:background="@color/dark_blue_gray"
     android:padding="16dp">
 
     <LinearLayout
@@ -216,7 +216,7 @@
 
     <!-- Kept BottomNavigationView since it works elsewhere -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
+        android:id="@+id/bottom_navigation34"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:background="@drawable/nav_button_background"

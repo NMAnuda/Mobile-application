@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#2E3B4E"
+    android:background="@color/dark_blue_gray"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -128,7 +128,7 @@
         android:layout_height="231dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
+            android:id="@+id/bottom_navigation2"
             android:layout_width="376dp"
             android:layout_height="75dp"
             android:background="@drawable/nav_button_background"

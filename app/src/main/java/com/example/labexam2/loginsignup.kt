@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class loginsignup : AppCompatActivity() {
 
@@ -26,6 +27,26 @@ class loginsignup : AppCompatActivity() {
             startActivity(intent)
         }
 
-
+        val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation8)
+        bottomNavigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_home -> {
+                    startActivity(Intent(this, HomeActivity::class.java))
+                    finish()
+                    true
+                }
+                R.id.nav_bookings -> {
+                    startActivity(Intent(this, History::class.java))
+                    finish()
+                    true
+                }
+                R.id.nav_profile -> {
+                    startActivity(Intent(this, profile::class.java))
+                    finish()
+                    true
+                }
+                else -> false
+            }
+        }
     }
 }

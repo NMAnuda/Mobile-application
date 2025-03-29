@@ -16,7 +16,7 @@
     <string name="mastercard_content_description">MasterCard</string>
     <string name="visa_content_description">Visa</string>
 
-    <!-- New strings for the rest of the layout -->
+
     <string name="app_title">AUTO SERVICE</string>
     <string name="login_label">Log In</string>
     <string name="slot_a_label">SLOT A</string>
@@ -38,8 +38,14 @@
     <string name="more_desc">Additional options</string>
     <string name="settings_label">Settings</string>
     <string name="logout_label">Logout</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="car_icon">Car Icon</string>
+    <string name="auto_service">AUTO SERVICE</string>
+    <string name="today">Today</string>
+    <string name="available">available</string>
+    <string name="booked">booked</string>
+    <string name="slot_a">SLOT A</string>
 
 
 </resources>

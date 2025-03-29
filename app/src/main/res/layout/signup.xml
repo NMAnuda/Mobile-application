@@ -165,7 +165,7 @@
         android:layout_height="231dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
+            android:id="@+id/bottom_navigation1"
             android:layout_width="376dp"
             android:layout_height="75dp"
             android:background="@drawable/nav_button_background"

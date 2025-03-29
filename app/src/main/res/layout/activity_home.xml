@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#2E3B4E"
+    android:background="@color/dark_blue_gray"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -41,51 +41,58 @@
 
     <LinearLayout
         android:layout_width="369dp"
-        android:layout_height="80dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingBottom="16dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SLOT A"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
+        <!-- Existing horizontal layout -->
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:gravity="center"
             android:orientation="horizontal">
 
-            <View
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginEnd="4dp"
-                android:background="#FF0000" />
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:text="booked"
+                android:text="@string/slot_a"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-            <View
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginEnd="4dp"
-                android:background="#00FF00" />
-
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="available"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:layout_marginStart="16dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="#FF0000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/booked"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="#00FF00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/available"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
@@ -100,8 +107,8 @@
         android:padding="16dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="356dp"
-            android:layout_height="449dp">
+            android:layout_width="349dp"
+            android:layout_height="427dp">
 
             <!-- Header Section -->
             <LinearLayout
@@ -116,28 +123,19 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/back1"
-                    android:contentDescription="Back" />
-
                 <TextView
-                    android:layout_width="297dp"
-                    android:layout_height="32dp"
+                    android:id="@+id/todayTextView"
+                    android:layout_width="305dp"
+                    android:layout_height="53dp"
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
-                    android:text="Tomorrow"
+                    android:text="@string/today"
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="24sp"
                     android:textStyle="bold" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="61dp"
-                    android:layout_height="45dp">
-                </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 
             <GridLayout
@@ -151,9 +149,9 @@
                 android:rowCount="2"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.538"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.328">
 
                 <!-- Slot 1 (Clickable) -->
                 <androidx.cardview.widget.CardView
@@ -177,10 +175,10 @@
                             android:id="@+id/slot1"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/circle_slot_booked"
+                            android:background="@drawable/circle_slot_available"
                             android:clickable="true"
-                        android:focusable="true"
-                        android:contextClickable="true" />
+                            android:contextClickable="true"
+                            android:focusable="true" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -214,7 +212,7 @@
                             android:id="@+id/slot2"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/circle_slot_available" /> <!-- No clickable attributes -->
+                            android:background="@drawable/circle_slot_available" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -248,7 +246,7 @@
                             android:id="@+id/slot3"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/circle_slot_available" /> <!-- No clickable attributes -->
+                            android:background="@drawable/circle_slot_available" />
 
                         <TextView
                             android:layout_width="98dp"
@@ -282,7 +280,7 @@
                             android:id="@+id/slot4"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/circle_slot_available" /> <!-- No clickable attributes -->
+                            android:background="@drawable/circle_slot_available" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -316,7 +314,7 @@
                             android:id="@+id/slot5"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/circle_slot_available" /> <!-- No clickable attributes -->
+                            android:background="@drawable/circle_slot_available" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -350,7 +348,7 @@
                             android:id="@+id/slot6"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:background="@drawable/circle_slot_booked" /> <!-- No clickable attributes -->
+                            android:background="@drawable/circle_slot_booked" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -363,15 +361,27 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </GridLayout>
+
+            <Button
+                android:id="@+id/calendarButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Calendar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+                app:layout_constraintVertical_bias="0.52" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
-        android:layout_height="203dp">
+        android:layout_height="230dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
+            android:id="@+id/bottom_navigation7"
             android:layout_width="376dp"
             android:layout_height="75dp"
             android:background="@drawable/nav_button_background"
